@@ -13,6 +13,11 @@
 		155251981DC0976500E7CE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155251961DC0976500E7CE17 /* Main.storyboard */; };
 		1552519A1DC0976500E7CE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155251991DC0976500E7CE17 /* Assets.xcassets */; };
 		1552519D1DC0976500E7CE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1552519B1DC0976500E7CE17 /* LaunchScreen.storyboard */; };
+		155251AB1DC0980000E7CE17 /* CXTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 155251AA1DC0980000E7CE17 /* CXTableDataDelegate.m */; };
+		155251B01DC0A02900E7CE17 /* UITableViewCell+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 155251AF1DC0A02900E7CE17 /* UITableViewCell+Category.m */; };
+		155251B31DC0A37A00E7CE17 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 155251B21DC0A37A00E7CE17 /* Student.m */; };
+		155251BC1DC0A45100E7CE17 /* StudentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 155251BA1DC0A45100E7CE17 /* StudentCell.m */; };
+		155251BD1DC0A45100E7CE17 /* StudentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155251BB1DC0A45100E7CE17 /* StudentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		155251991DC0976500E7CE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1552519C1DC0976500E7CE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1552519E1DC0976500E7CE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155251A91DC0980000E7CE17 /* CXTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTableDataDelegate.h; sourceTree = "<group>"; };
+		155251AA1DC0980000E7CE17 /* CXTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTableDataDelegate.m; sourceTree = "<group>"; };
+		155251AE1DC0A02900E7CE17 /* UITableViewCell+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Category.h"; sourceTree = "<group>"; };
+		155251AF1DC0A02900E7CE17 /* UITableViewCell+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Category.m"; sourceTree = "<group>"; };
+		155251B11DC0A37A00E7CE17 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		155251B21DC0A37A00E7CE17 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		155251B91DC0A45100E7CE17 /* StudentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentCell.h; sourceTree = "<group>"; };
+		155251BA1DC0A45100E7CE17 /* StudentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentCell.m; sourceTree = "<group>"; };
+		155251BB1DC0A45100E7CE17 /* StudentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +72,16 @@
 		1552518C1DC0976500E7CE17 /* Tableview分离 */ = {
 			isa = PBXGroup;
 			children = (
+				155251A51DC097A600E7CE17 /* CXTableviewDataDelegate */,
 				155251901DC0976500E7CE17 /* AppDelegate.h */,
 				155251911DC0976500E7CE17 /* AppDelegate.m */,
 				155251931DC0976500E7CE17 /* ViewController.h */,
 				155251941DC0976500E7CE17 /* ViewController.m */,
+				155251B11DC0A37A00E7CE17 /* Student.h */,
+				155251B21DC0A37A00E7CE17 /* Student.m */,
+				155251B91DC0A45100E7CE17 /* StudentCell.h */,
+				155251BA1DC0A45100E7CE17 /* StudentCell.m */,
+				155251BB1DC0A45100E7CE17 /* StudentCell.xib */,
 				155251961DC0976500E7CE17 /* Main.storyboard */,
 				155251991DC0976500E7CE17 /* Assets.xcassets */,
 				1552519B1DC0976500E7CE17 /* LaunchScreen.storyboard */,
@@ -77,6 +97,17 @@
 				1552518E1DC0976500E7CE17 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		155251A51DC097A600E7CE17 /* CXTableviewDataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				155251A91DC0980000E7CE17 /* CXTableDataDelegate.h */,
+				155251AA1DC0980000E7CE17 /* CXTableDataDelegate.m */,
+				155251AE1DC0A02900E7CE17 /* UITableViewCell+Category.h */,
+				155251AF1DC0A02900E7CE17 /* UITableViewCell+Category.m */,
+			);
+			path = CXTableviewDataDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +172,7 @@
 				1552519D1DC0976500E7CE17 /* LaunchScreen.storyboard in Resources */,
 				1552519A1DC0976500E7CE17 /* Assets.xcassets in Resources */,
 				155251981DC0976500E7CE17 /* Main.storyboard in Resources */,
+				155251BD1DC0A45100E7CE17 /* StudentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155251AB1DC0980000E7CE17 /* CXTableDataDelegate.m in Sources */,
+				155251B01DC0A02900E7CE17 /* UITableViewCell+Category.m in Sources */,
 				155251951DC0976500E7CE17 /* ViewController.m in Sources */,
 				155251921DC0976500E7CE17 /* AppDelegate.m in Sources */,
+				155251BC1DC0A45100E7CE17 /* StudentCell.m in Sources */,
 				1552518F1DC0976500E7CE17 /* main.m in Sources */,
+				155251B31DC0A37A00E7CE17 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
