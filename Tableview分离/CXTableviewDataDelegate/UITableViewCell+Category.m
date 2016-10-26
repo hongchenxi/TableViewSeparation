@@ -22,7 +22,7 @@
     
 }
 
-+ (CGFloat)getCellHegithWithObjcet:(id)object indexPath:(NSIndexPath *)indexPath {
++ (CGFloat)getCellHeigthWithObjcet:(id)object indexPath:(NSIndexPath *)indexPath {
     if (!object) {
         return 0.0;
     }

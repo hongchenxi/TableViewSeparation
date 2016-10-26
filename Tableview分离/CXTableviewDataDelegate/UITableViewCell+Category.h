@@ -14,6 +14,6 @@
 
 - (void)configure:(UITableViewCell *)cell customObj:(id)obj indexPath:(NSIndexPath *)indexPath;
 
-+ (CGFloat)getCellHegithWithObjcet:(id)object indexPath:(NSIndexPath *)indexPath;
++ (CGFloat)getCellHeigthWithObjcet:(id)object indexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -34,7 +34,7 @@
     studentCell.age.text = [NSString stringWithFormat:@"%ld岁",student.age];
 }
 
-+ (CGFloat)getCellHegithWithObjcet:(id)object indexPath:(NSIndexPath *)indexPath {
++ (CGFloat)getCellHeigthWithObjcet:(id)object indexPath:(NSIndexPath *)indexPath {
     return ((Student *)object).height ;
 }
 

@@ -55,7 +55,7 @@
     };
     
     CellHeightBlock cellHeight = ^CGFloat(NSIndexPath *indexPath, id item) {
-        return [StudentCell getCellHegithWithObjcet:item indexPath:indexPath];
+        return [StudentCell getCellHeigthWithObjcet:item indexPath:indexPath];
     };
     
     DidSelectCellBlock cellDidSelect = ^(NSIndexPath *indexPath, id item) {
